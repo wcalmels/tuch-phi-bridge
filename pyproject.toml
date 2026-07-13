@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tuch-phi-bridge"
+version = "0.1.0"
+description = "Spectral Φ bridge (ConsciousAI-compatible) for TUCH Sentinel + Book agents"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Walter Calmels", email = "wcalmels@phi47.cl" }]
+dependencies = ["numpy>=1.20.0"]
+
+[project.optional-dependencies]
+consciousai = []  # path sibling ../consciousai — not on PyPI here
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["phi_bridge*"]
