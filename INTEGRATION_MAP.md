@@ -11,6 +11,8 @@ Tags: `phi_spectral` (this bridge) · `phics_fidelity` / `C_phi` (PhiCS) · `Phi
 | Book manuscript health | `book_agent/phics_bridge` | Optional Φ on chapter signal matrix |
 | Vision / OCR audit | `book_agent/vision_agent` | Φ across figure channels |
 | Multi-agent session | `sentinel-edge/agents` | Candidate P2 |
+| PX4 / MAVLink | `phi_bridge/connectors/mavlink_px4.py` | sim + live (pymavlink) |
+| HTTP API | `phi_bridge/server.py` → `POST /phi-spectral` | Local cloud stub now |
 
 ## B — ConsciousAI domains (upstream)
 
@@ -32,14 +34,14 @@ Tags: `phi_spectral` (this bridge) · `phics_fidelity` / `C_phi` (PhiCS) · `Phi
 | Figure panel cohesion | Vision matrix Φ |
 | Experimental suite P1–P5 | Meta-monitor of pipeline health |
 
-## D — Cloud (later)
+## D — Cloud
 
 | Step | Action |
 |------|--------|
 | 1 | Stabilize local umbrales |
-| 2 | HTTP `POST /phi-spectral` in this package |
-| 3 | `PHI_SPECTRAL_URL` on edge |
-| 4 | LICENSE B before commercial SaaS |
+| 2 | HTTP `POST /phi-spectral` — **done** (`py -3 -m phi_bridge.server`) |
+| 3 | Point edge / PX4 demo at `http://host:8787` (`--api`) |
+| 4 | LICENSE B (ConsciousAI) before commercial SaaS |
 
 ## Vocabulary
 
