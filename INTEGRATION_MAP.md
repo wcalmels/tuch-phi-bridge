@@ -16,7 +16,7 @@ Tags: `phi_spectral` (this bridge) · `phics_fidelity` / `C_phi` (PhiCS) · `Phi
 
 | Domain | Module | When |
 |--------|--------|------|
-| Drones / UCF agents | `framework.py` + `examples/drone_sim.py` (RTL/LAND demo) | Local demo now |
+| Drones / UCF agents | `framework.py` + `examples/drone_sim.py` + `examples/fleet_sim.py` | Local demos now |
 | LLM layer Φ | `llm_probing.py` | Phase 2 (GPU) |
 | Financial systemic risk | `financial_risk.py` | Separate product |
 | Connectivity Granger/MI | `connectivity.py` | EEG / process |

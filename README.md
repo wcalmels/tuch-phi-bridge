@@ -63,7 +63,11 @@ cd C:\Users\wcalm\OneDrive\Escritorio\tuch-phi-bridge
 py -3 examples\drone_sim.py
 py -3 examples\drone_sim.py --fault gps_dropout --fault-start 40
 py -3 examples\drone_sim.py --fault wind_gust --steps 120
+py -3 examples\fleet_sim.py
+py -3 examples\fleet_sim.py --n 10 --seed 11
 ```
 
-UAV demo maps `phi_spectral` → **CRUISE / CONSERVATIVE / RTL / EMERGENCY_LAND**.
+- Single UAV: `phi_spectral` → **CRUISE / CONSERVATIVE / RTL / EMERGENCY_LAND**
+- Fleet: per-drone policy + collective Φ → **HOLD / HOLD_PATTERN / RTL_ALL / LAND_ALL**
+
 Simulation only — not flight-certified.
